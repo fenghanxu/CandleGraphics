@@ -89,7 +89,7 @@
 /*使用时注意  topSafeH 相加减要加括号 例如:Phone_Height - headerViewHeight - (topSafeH)*/
 #define topSafeHeight statusHeight + navigationHeight
 //底部安全距离
-#define bottomSafeHeight (statusHigh > 20.0 ? 34.0 : 0.0)
+#define bottomSafeHeight (statusHeight > 20.0 ? 34.0 : 0.0)
 
 //屏幕高度
 #define screenHeight [[UIScreen mainScreen] bounds].size.height
@@ -128,3 +128,9 @@
     //relsase模式下 不打印日志
     #define DEBUGLog(...)
 #endif
+
+
+#define viewHeight 300
+#define space 3
+#define MaxVisibleKLineCount 300
+#define MaxCacheKLineCount 600
